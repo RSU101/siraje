@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engineering Pro | Excellence in Engineering Solutions</title>
+  <meta name="description" content="Leading multi-disciplinary engineering firm specializing in Mechanics, Works, Electrical & Electronics, Manufacturing, and Recycling & Repair.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+</head>
+<body>
+  <!-- TOOLBAR -->
+  <div class="toolbar">
+    <div class="toolbar-left">
+      <span class="status"><span class="dot"></span> Systems Online</span>
+      <span>ISO 9001:2015 Certified</span>
+    </div>
+    <div class="toolbar-right">
+      <span id="liveClock">--:--:--</span>
+      <a href="mailto:info@rsu1.uk">info@rsu1.uk</a>
+      <a href="tel:+256772877359">+256 772 877 359</a>
+      <a href="tel:+256759113232">+256 759 113 232</a>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="assets/logo.png" alt="RSU Logo" class="logo-img" width="48" height="48">
+        <span class="logo-text">RSU</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="mechanics.html">Mechanics</a>
+        <a href="works.html">Works</a>
+        <a href="electrical.html">Electrical & Electronics</a>
+        <a href="manufacturing.html">Manufacturing</a>
+        <a href="recycling.html">Recycling & Repair</a>
+      </div>
+      <div class="hamburger" role="button" aria-label="Open menu" aria-expanded="false" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+  <div class="nav-overlay" aria-hidden="true"></div>
+
+  <!-- MENUBAR -->
+  <div class="menubar">
+    <div class="menubar-inner">
+      <a href="index.html" class="active">Dashboard</a>
+      <a href="mechanics.html">Mechanics Dept</a>
+      <a href="works.html">Works Dept</a>
+      <a href="electrical.html">E&E Dept</a>
+      <a href="manufacturing.html">Manufacturing</a>
+      <a href="recycling.html">Recycling & Repair</a>
+      <a href="#models">3D Models</a>
+      <a href="#contact">Contact Us</a>
+      <a href="#services">Our Services</a>
+    </div>
+  </div>
+
+  <!-- HERO SLIDESHOW (5 images) -->
+  <section class="hero">
+    <div class="slideshow">
+      <!-- Slide 1 -->
+      <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1600&q=80');">
+        <div class="slide-overlay">
+          <div class="slide-content">
+            <h1>Precision Engineering for the Modern World</h1>
+            <p>Delivering world-class mechanical, electrical, and manufacturing solutions with innovation at the core.</p>
+            <a href="#services" class="btn btn-primary">Explore Services →</a>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1600&q=80');">
+        <div class="slide-overlay">
+          <div class="slide-content">
+            <h1>Advanced Manufacturing Excellence</h1>
+            <p>From prototype to production — CNC, fabrication, and quality-controlled manufacturing under one roof.</p>
+            <a href="manufacturing.html" class="btn btn-primary">Manufacturing Dept →</a>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1600&q=80');">
+        <div class="slide-overlay">
+          <div class="slide-content">
+            <h1>Electrical & Electronics Mastery</h1>
+            <p>Power systems, automation, control panels, and smart electronics designed for reliability.</p>
+            <a href="electrical.html" class="btn btn-primary">E&E Department →</a>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 4 -->
+      <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=1600&q=80');">
+        <div class="slide-overlay">
+          <div class="slide-content">
+            <h1>Sustainable Recycling & Repair</h1>
+            <p>Extending equipment life through expert repair, refurbishment, and responsible recycling programs.</p>
+            <a href="recycling.html" class="btn btn-primary">Recycling & Repair →</a>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 5 -->
+      <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1581092918056-0c4c3faad2ba?w=1600&q=80');">
+        <div class="slide-overlay">
+          <div class="slide-content">
+            <h1>Complete Civil & Structural Works</h1>
+            <p>Infrastructure, structural engineering, and large-scale works delivered on time and to specification.</p>
+            <a href="works.html" class="btn btn-primary">Works Department →</a>
+          </div>
+        </div>
+      </div>
+
+      <button class="slide-nav prev" aria-label="Previous">‹</button>
+      <button class="slide-nav next" aria-label="Next">›</button>
+      <div class="slideshow-controls">
+        <button class="dot-indicator active" aria-label="Slide 1"></button>
+        <button class="dot-indicator" aria-label="Slide 2"></button>
+        <button class="dot-indicator" aria-label="Slide 3"></button>
+        <button class="dot-indicator" aria-label="Slide 4"></button>
+        <button class="dot-indicator" aria-label="Slide 5"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Engineering Departments</h2>
+        <p>Five specialized divisions working together to deliver complete end-to-end engineering solutions.</p>
+      </div>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon">🔧</div>
+          <h3>Mechanics Department</h3>
+          <p>Mechanical systems, Driving services (Autoparts, Autogarage, Aviation, Customer Care), and industrial equipment.</p>
+          <a href="mechanics.html" class="more">Explore Department →</a>
+        </div>
+        <div class="card">
+          <div class="card-icon">🏗️</div>
+          <h3>Works Department</h3>
+          <p>Civil, structural works, and Building Construction — Roadworks, Carpentry & Joinery, Metal Works, Blacksmith.</p>
+          <a href="works.html" class="more">Explore Department →</a>
+        </div>
+        <div class="card">
+          <div class="card-icon">⚡</div>
+          <h3>Electrical & Electronics</h3>
+          <p>Power, automation, electronics, and Solar Systems — Electricals, Electronics, AutoCAD.</p>
+          <a href="electrical.html" class="more">Explore Department →</a>
+        </div>
+        <div class="card">
+          <div class="card-icon">🏭</div>
+          <h3>Manufacturing</h3>
+          <p>CNC, fabrication, production, and Research Division — Cosmetology, Telecoms, Mealers, Jewelleries.</p>
+          <a href="manufacturing.html" class="more">Explore Department →</a>
+        </div>
+        <div class="card">
+          <div class="card-icon">♻️</div>
+          <h3>Recycling & Repair</h3>
+          <p>Repair, recycling, and Plastics Division — Metals, Chemicals, Ceramics, Hides & Skins, Store.</p>
+          <a href="recycling.html" class="more">Explore Department →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <h2>By The Numbers</h2>
+        <p>Decades of proven engineering excellence across industries.</p>
+      </div>
+      <div class="stats">
+        <div class="stat-item">
+          <div class="number" data-target="25">0</div>
+          <div class="label">Years Experience</div>
+        </div>
+        <div class="stat-item">
+          <div class="number" data-target="850">0</div>
+          <div class="label">Projects Completed</div>
+        </div>
+        <div class="stat-item">
+          <div class="number" data-target="120">0</div>
+          <div class="label">Engineers & Technicians</div>
+        </div>
+        <div class="stat-item">
+          <div class="number" data-target="98">0%</div>
+          <div class="label">Client Satisfaction</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <h2>Why Choose Engineering Pro</h2>
+        <p>Integrated expertise across five departments means faster delivery and better outcomes.</p>
+      </div>
+      <div class="two-col">
+        <div class="features-list">
+          <div class="feature-item">
+            <div class="feature-icon">🎯</div>
+            <div>
+              <h4>Multi-Disciplinary Approach</h4>
+              <p>One team handling mechanical, electrical, works, manufacturing, and repair under unified project management.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🛡️</div>
+            <div>
+              <h4>Quality & Safety First</h4>
+              <p>ISO-certified processes, rigorous QA/QC, and strict adherence to international safety standards.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">⏱️</div>
+            <div>
+              <h4>On-Time Delivery</h4>
+              <p>Proven project controls and resource planning that keep schedules and budgets on track.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🌱</div>
+            <div>
+              <h4>Sustainable Practices</h4>
+              <p>Dedicated recycling & repair division focused on circular economy and reducing industrial waste.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card" style="height: 100%; display: flex; flex-direction: column; justify-content: center;">
+            <span class="badge" style="align-self: flex-start; margin-bottom: 1rem;">Get Started</span>
+            <h3 style="margin-bottom: 1rem;">Ready to start your next project?</h3>
+            <p style="margin-bottom: 1.5rem;">Contact our engineering team for a consultation or request a detailed quotation.</p>
+            <a href="#contact" class="btn btn-primary">Request a Quote</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 3D MODEL VIEWER GALLERY -->
+  <section id="models" class="models-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Interactive 3D Engineering Models</h2>
+        <p>Explore sample components — drag to rotate, scroll to zoom. Works on mobile with touch.</p>
+      </div>
+      <div class="models-grid">
+        <div class="model-card">
+          <div class="model-viewer-wrap">
+            <model-viewer
+              id="model-gear"
+              src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+              alt="Astronaut sample model"
+              camera-controls
+              touch-action="pan-y"
+              auto-rotate
+              shadow-intensity="1"
+              exposure="1"
+              environment-image="neutral"
+              ar
+              ar-modes="webxr scene-viewer quick-look"
+            ></model-viewer>
+            <div class="model-fallback">Model could not load — check network</div>
+          </div>
+          <div class="model-card-body">
+            <h3>Sample Assembly Viewer</h3>
+            <p>Interactive 3D viewer powered by model-viewer. Rotate, zoom, and inspect details.</p>
+            <div class="model-actions">
+              <button type="button" data-target="model-gear" data-orbit="0deg 75deg 105%">Front</button>
+              <button type="button" data-target="model-gear" data-orbit="90deg 75deg 105%">Side</button>
+              <button type="button" data-target="model-gear" data-orbit="0deg 105deg 2.5m">Top</button>
+            </div>
+            <p class="model-hint">Drag · Scroll · Pinch · AR on supported devices</p>
+          </div>
+        </div>
+        <div class="model-card">
+          <div class="model-viewer-wrap">
+            <model-viewer
+              id="model-robot"
+              src="https://modelviewer.dev/shared-assets/models/RobotExpressive.glb"
+              alt="Robot expressive model"
+              camera-controls
+              touch-action="pan-y"
+              auto-rotate
+              shadow-intensity="1"
+              exposure="1"
+              environment-image="neutral"
+            ></model-viewer>
+            <div class="model-fallback">Model could not load — check network</div>
+          </div>
+          <div class="model-card-body">
+            <h3>Mechanism Preview</h3>
+            <p>Inspect articulated mechanisms and assemblies before fabrication or installation.</p>
+            <div class="model-actions">
+              <button type="button" data-target="model-robot" data-orbit="0deg 75deg 2.5m">Reset</button>
+              <button type="button" data-target="model-robot" data-orbit="45deg 55deg 2.2m">Angle</button>
+            </div>
+            <p class="model-hint">Ideal for design reviews and client presentations</p>
+          </div>
+        </div>
+        <div class="model-card">
+          <div class="model-viewer-wrap">
+            <model-viewer
+              id="model-chair"
+              src="https://modelviewer.dev/shared-assets/models/glTF-Sample-Assets/Models/ChairDamaskPurplegold/glTF-Binary/ChairDamaskPurplegold.glb"
+              alt="Chair sample product model"
+              camera-controls
+              touch-action="pan-y"
+              auto-rotate
+              shadow-intensity="1"
+              exposure="1"
+            ></model-viewer>
+            <div class="model-fallback">Model could not load — check network</div>
+          </div>
+          <div class="model-card-body">
+            <h3>Product / Part Review</h3>
+            <p>Use the same viewer for manufactured parts, fixtures, and finished products.</p>
+            <div class="model-actions">
+              <button type="button" data-target="model-chair" data-orbit="0deg 75deg 2m">Front</button>
+              <button type="button" data-target="model-chair" data-orbit="180deg 75deg 2m">Back</button>
+            </div>
+            <p class="model-hint">Replace these demo models with your own .glb / .gltf files</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contact Us</h2>
+        <p>Reach out to any department or send a general inquiry. We respond within 24 hours.</p>
+      </div>
+      <div class="two-col">
+        <form id="contactForm" class="card">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required placeholder="John Doe">
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="john@company.com">
+          </div>
+          <div class="form-group">
+            <label for="department">Department of Interest</label>
+            <select id="department" name="department">
+              <option value="general">General Inquiry</option>
+              <option value="mechanics">Mechanics</option>
+              <option value="works">Works</option>
+              <option value="electrical">Electrical & Electronics</option>
+              <option value="manufacturing">Manufacturing</option>
+              <option value="recycling">Recycling & Repair</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="Tell us about your project..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+        </form>
+        <div>
+          <div class="card" style="margin-bottom: 1.5rem;">
+            <h3 style="margin-bottom: 1rem;">Headquarters</h3>
+            <p>Industrial Park, Plot 42<br>Nairobi, Kenya</p>
+            <p style="margin-top: 1rem;"><strong>Phone:</strong> +256 772 877 359</p>
+            <p><strong>Email:</strong> info@rsu1.uk</p>
+            <p><strong>Hours:</strong> Mon–Fri 08:00–17:00 EAT</p>
+          </div>
+          <div class="card">
+            <h3 style="margin-bottom: 1rem;">Emergency Support</h3>
+            <p>24/7 technical support for critical systems and plant breakdowns.</p>
+            <p style="margin-top: 0.75rem; color: var(--accent); font-weight: 600;">+256 759 113 232</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="logo" style="margin-bottom: 1rem;">
+            <img src="assets/logo.png" alt="RSU Logo" class="logo-img" width="52" height="52">
+            <span class="logo-text">RSU</span>
+          </div>
+          <p>A multi-disciplinary engineering firm delivering excellence across Mechanics, Works, Electrical & Electronics, Manufacturing, and Recycling & Repair.</p>
+          <div class="socials">
+            <a href="#" title="LinkedIn">in</a>
+            <a href="#" title="Twitter">𝕏</a>
+            <a href="#" title="YouTube">▶</a>
+            <a href="#" title="Facebook">f</a>
+          </div>
+        </div>
+        <div>
+          <h4>Departments</h4>
+          <div class="footer-links">
+            <a href="mechanics.html">Mechanics</a>
+            <a href="works.html">Works</a>
+            <a href="electrical.html">Electrical & Electronics</a>
+            <a href="manufacturing.html">Manufacturing</a>
+            <a href="recycling.html">Recycling & Repair</a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+            <a href="#">Careers</a>
+            <a href="#">Safety Policy</a>
+          </div>
+        </div>
+        <div>
+          <h4>Certifications</h4>
+          <p>ISO 9001:2015<br>ISO 14001:2015<br>ISO 45001:2018<br>Kenya Bureau of Standards</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Engineering Pro. All rights reserved.</span>
+        <span>Built for the Engineering Sector</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="js/main.js"></script>
+</body>
+</html>
